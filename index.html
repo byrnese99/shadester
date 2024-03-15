@@ -7,8 +7,42 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="color-box" id="color-box"></div>
-        <button id="generate-color-btn">Generate Color!</button>
+        <section class="top-section">
+            <div class="color-box" id="color-box"></div>
+            <select name="scheme-types" id="scheme-types">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-Dark</option>
+                <option value="monochrome-light">Monochrome-Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="generate-color-btn">Generate Scheme!</button>
+        </section>
+        <section class="color-scheme-display">
+            <div class="color-container">
+                <div class="color" id="color-one"></div>
+                <p class="color-text" id="color-one-text"></p>
+            </div>
+            <div class="color-container">
+                <div class="color" id="color-two"></div>
+                <p class="color-text" id="color-two-text"></p>
+            </div>
+            <div class="color-container">
+                <div class="color" id="color-three"></div>
+                <p class="color-text" id="color-three-text"></p>
+            </div>
+            <div class="color-container">
+                <div class="color" id="color-four"></div>
+                <p class="color-text" id="color-four-text"></p>
+            </div>
+            <div class="color-container">
+                <div class="color" id="color-five"></div>
+                <p class="color-text" id="color-five-text"></p>
+            </div>
+        </section>
     <script src="main.js"></script>
     </body>
 </html>
