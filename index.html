@@ -11,7 +11,7 @@
     </head>
     <body>
         <form class="top-section" name="color-scheme-selection-form" id="color-scheme-selection-form" action="">
-            <span class="color-container"><input type="color" id="color-box"></span>
+            <span><input type="color" id="color-box"></span>
             <select name="schemes" id="schemes">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-Dark</option>
@@ -24,28 +24,30 @@
             </select>
             <button id="generate-color-scheme-btn" type="submit" form="color-scheme-selection-form">Generate Scheme!</button>
         </form>
-        <section class="color-scheme-display">
-            <div class="color-container">
-                <div class="color" id="color-one"></div>
-                <p class="color-text" id="color-one-text">#000000</p>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-two"></div>
-                <p class="color-text" id="color-two-text">#1A1919</p>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-three"></div>
-                <p class="color-text" id="color-three-text">#343232</p>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-four"></div>
-                <p class="color-text" id="color-four-text">#4F4A4A</p>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-five"></div>
-                <p class="color-text" id="color-five-text">#6A6262</p>
-            </div>
-        </section>
-    <script src="main.js"></script>
+        <main class="display-section">
+            <section class="color-scheme-display">
+                <div class="color-container">
+                    <div class="color" id="color-one"></div>
+                    <p class="color-text" id="color-one-text">#000000</p>
+                </div>
+                <div class="color-container">
+                    <div class="color" id="color-two"></div>
+                    <p class="color-text" id="color-two-text">#1A1919</p>
+                </div>
+                <div class="color-container">
+                    <div class="color" id="color-three"></div>
+                    <p class="color-text" id="color-three-text">#343232</p>
+                </div>
+                <div class="color-container">
+                    <div class="color" id="color-four"></div>
+                    <p class="color-text" id="color-four-text">#4F4A4A</p>
+                </div>
+                <div class="color-container">
+                    <div class="color" id="color-five"></div>
+                    <p class="color-text" id="color-five-text">#6A6262</p>
+                </div>
+            </section>
+        </main>
+        <script src="main.js"></script>
     </body>
 </html>

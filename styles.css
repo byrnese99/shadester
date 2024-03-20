@@ -11,19 +11,25 @@ body {
     align-items: center;
     font-family: "Trispace", sans-serif;
     background-color: #1c2333;
+    width: 100%;
 }
 
-.color-container {
+.top-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 1em 2em;
+    gap: 1em;
 }
+
 
 #color-box {
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     appearance: none;
     background-color: transparent;
     border: none;
@@ -31,12 +37,11 @@ body {
 
 #color-box::-webkit-color-swatch, #color-box::-webkit-color-swatch-wrapper {
     border: 1px solid #314960;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 0;
 }
   
 #schemes {
-    width: 30%;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -44,18 +49,15 @@ body {
     text-align: center;
 }
 
-button {
-    width: 30%;
-}
-
 #schemes, button {
     font-family: "Trispace", sans-serif;
     font-weight: 100;
-    padding: 20px;
+    padding: 0.5em;
     border: 1px solid #314960;
     color: #ffffff;
     background-color: #1c2333;
-    font-size: 2em;
+    font-size: 1em;
+    width: 100%;
     border-radius: 50px;
     transition: 0.2s all ease-in-out;
 }
@@ -65,36 +67,39 @@ button {
     background-color: #314960;
 }
 
-.top-section {
+.display-section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2em 4em;
-    gap: 1.5em;
 }
 
 .color-scheme-display {
-    width: 90%;
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2em;
+    width: 100%;
 }
 
 .color-container {
-    display: flex;
-    flex-direction: column;
     color: #ffffff;
     font-weight: 100;
+    width: 100%;
+    min-width: 0;
 }
 
 .color{
     width: 100%;
-    height: 45em;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
 }
 
 .color-text {
-    padding: 2em 0;
+    font-size: 0.5em;
+    padding-top: 30px;
+    text-align: center;
 }
 
 #color-one {
@@ -119,4 +124,140 @@ button {
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: #6A6262;
+}
+ 
+@media (min-width: 425px) {
+
+    #schemes, button {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    #schemes {
+        width: 70%;
+    }
+
+    .color-text {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 576px){
+
+    .top-section {
+        padding: 1em 2em;
+        gap: 1em;
+    }
+
+    #schemes, button {
+        font-size: 1.5em;
+    }
+
+    #color-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .color-scheme-display {
+        padding: 2em;
+    }
+
+    .color-text {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px){
+
+    .top-section {
+        gap: 1.5em;
+    }
+
+    #schemes, button {
+        font-size: 2em;
+    }
+
+    #schemes {
+        width: 70%
+    }
+
+    button {
+        width: 90%;
+    }
+
+    #color-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .color-scheme-display {
+        padding: 2em;
+    }
+
+    .color-text {
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .top-section {
+        padding: 2em 4em;
+        gap: 1em;
+    }
+
+    #schemes, button {
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    #schemes {
+        width: 40%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .top-section {
+        padding: 2em 4em;
+        gap: 1.5em;
+    }
+
+    button, #schemes {
+        font-size: 1.75em;
+    }
+
+    #schemes {
+        width: 40%;
+    }
+
+    button {
+        width: 40%;
+    }
+    
+    .color-scheme-display{
+        padding: 2em 5em;
+    }
+
+    .color-text {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .top-section {
+        padding: 4em;
+        gap: 1.5em;
+    }
+
+    button, #schemes {
+        font-size: 2em;
+        padding: 1.125em;
+        border-radius: 80px;
+    }
 }
